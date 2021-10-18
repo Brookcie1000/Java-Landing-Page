@@ -1,0 +1,16 @@
+#header {
+    grid-area: head;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#logo-header {
+    margin-right: 60vw;
+    height: 20vw;
+    width: 40vw;
+    background-image: url(https://i0.wp.com/wptavern.com/wp-content/uploads/2016/06/udacity.png?ssl=1);
+    background-size: 100% 100%;
+
+}

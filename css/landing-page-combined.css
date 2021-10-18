@@ -1,0 +1,50 @@
+/* Import header and footer css */
+@import "/css/header.css";
+@import "/css/footer.css";
+
+/* Set up web container for website */
+body {
+    margin: 0px;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vw auto 20vw;
+    grid-template-areas:
+    "head"
+    "cont"
+    "foot";
+ 
+}
+
+/* Highlight divs for easy debug */
+.box {
+    border: 1px solid red;
+
+}
+
+#content {
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#section-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 10vw;
+
+}
+
+#section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+
+}
