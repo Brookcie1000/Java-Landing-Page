@@ -1,0 +1,17 @@
+{
+  "name": "landing-page-project-2",
+  "version": "1.0.0",
+  "description": "landing page which has dynamic navigation",
+  "main": "/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "james-brooks",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.5"
+  }
+}
