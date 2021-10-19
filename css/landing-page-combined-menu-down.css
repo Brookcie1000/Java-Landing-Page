@@ -26,6 +26,11 @@ body {
 
 }
 
+#menu {
+    margin-left: 50vw;
+
+}
+
 #content {
     grid-area: cont;
     display: flex;
