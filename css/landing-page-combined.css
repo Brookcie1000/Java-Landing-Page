@@ -11,9 +11,10 @@ body {
 #container {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 20vw auto 20vw;
+    grid-template-rows: 20vw auto auto 20vw;
     grid-template-areas:
     "head"
+    "menu"
     "cont"
     "foot";
  
@@ -22,6 +23,11 @@ body {
 /* Highlight divs for easy debug */
 .box {
     border: 1px solid red;
+
+}
+
+#menu {
+    margin-left: 50vw;
 
 }
 

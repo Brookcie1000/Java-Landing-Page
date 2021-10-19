@@ -25,14 +25,11 @@ menuElement.appendChild(menuElementList);
 const menuToggle = () => {
     let cssLinkElement = document.querySelector("link");
 
-    if (cssLinkElement.href === "http://localhost:3000/css/landing-page-combined-menu-down.css") {
-        cssLinkElement.href = "/css/landing-page-combined.css";
+    if (document.querySelector("#menu")) {
         menuElement = document.querySelector("#menu");
         menuElement.remove();
 
     } else {
-        cssLinkElement.href = "/css/landing-page-combined-menu-down.css";
-
         const headerElement = document.querySelector("#header");
         headerElement.insertAdjacentElement("afterend", menuElement);
 
