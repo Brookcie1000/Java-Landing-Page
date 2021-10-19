@@ -21,8 +21,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 10vw;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 10vw;
+    max-height: 10vw;
     background-image: url("/img/mobile/mobile-nav-bar.png");
     background-size: 100% 100%;
 
