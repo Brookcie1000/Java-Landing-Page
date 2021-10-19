@@ -8,7 +8,9 @@ const sectionList = document.querySelectorAll(".section h1");
 for(let i = 0; i < sectionList.length; i++) {
     const listItemElement = document.createElement("a");
     listItemElement.href = "#section-" + (i+1);
-    listItemElement.innerText = sectionList[i].innerText;
+    const listItemElementText = document.createElement("li");
+    listItemElementText.innerText = sectionList[i].innerText;
+    listItemElement.appendChild(listItemElementText);
     docFrag.appendChild(listItemElement);
     console.log(docFrag);
 
