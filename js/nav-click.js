@@ -4,6 +4,21 @@ const docFrag = document.createDocumentFragment();
 /* Scan all section headers to prepare for menu click */
 const sectionList = document.querySelectorAll(".section h1");
 
+/* Set active state function */
+const setActiveState = (num) => {
+    if (document.querySelector(".active")) {
+        document.querySelector(".active").classList.remove("active");
+        setActiveState(num);
+
+    } else {
+        const activeDiv = document.getElementById(`section-${num}`);
+        activeDiv.classList.add("active");
+
+    }
+    
+
+}
+
 /* Scroll into view function */
 const scrollToSection = (num) => {
     const idToScollTo = document.getElementById(`section-${num}`);
@@ -13,13 +28,13 @@ const scrollToSection = (num) => {
         inline: 'start'
 
     });
-
+    
 }
 
 /* Create list items of the sections */
 for(let i = 0; i < sectionList.length; i++) {
     const listItemElement = document.createElement("button");
-    listItemElement.setAttribute("onclick",`scrollToSection(${(i+1)})`)
+    listItemElement.setAttribute("onclick",`scrollToSection(${(i+1)}); setActiveState(${(i+1)})`);
     const listItemElementText = document.createElement("li");
     listItemElementText.innerText = sectionList[i].innerText;
     listItemElement.appendChild(listItemElementText);
