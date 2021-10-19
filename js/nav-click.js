@@ -4,15 +4,17 @@ const docFrag = document.createDocumentFragment();
 /* Scan all section headers to prepare for menu click */
 const sectionList = document.querySelectorAll(".section h1");
 
+/* Create list items of the sections */
 for(let i = 0; i < sectionList.length; i++) {
-    const listItemElement = document.createElement("li");
+    const listItemElement = document.createElement("a");
+    listItemElement.href = "#section-" + (i+1);
     listItemElement.innerText = sectionList[i].innerText;
     docFrag.appendChild(listItemElement);
     console.log(docFrag);
 
 }
 
-/* Finalise the ready menu div item */
+/* Create the ready menu div item */
 let menuElement = document.createElement("div");
 menuElement.id = "menu";
 menuElement.className = "box";
