@@ -39,7 +39,7 @@ body {
 
 }
 
-#section-1 {
+.left-margin {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ body {
 
 }
 
-#section-2 {
+.right-margin {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
