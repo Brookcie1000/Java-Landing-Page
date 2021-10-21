@@ -12,7 +12,9 @@ const setActiveState = (num) => {
 
     } else {
         const activeDiv = document.getElementById(`section-${num}`);
+        const activeButton = document.getElementById(`button-${num}`)
         activeDiv.classList.add("active");
+        activeButton.classList.add("active");
 
     }
     
@@ -35,6 +37,7 @@ const scrollToSection = (num) => {
 for(let i = 0; i < sectionList.length; i++) {
     const listItemElement = document.createElement("li");
     const listItemElementText = document.createElement("button");
+    listItemElementText.id = `button-${(i+1)}`
     listItemElementText.setAttribute("onclick",`scrollToSection(${(i+1)}); setActiveState(${(i+1)})`);
     listItemElementText.innerText = sectionList[i].innerText;
     listItemElement.appendChild(listItemElementText);
