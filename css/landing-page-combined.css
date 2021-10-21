@@ -24,7 +24,8 @@ body {
 #menu {
     grid-area: menu;
     background-color: rgb(153,217,234);
-    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* Highlight divs for easy debug */
@@ -35,9 +36,11 @@ body {
 
 #content {
     grid-area: cont;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-row-gap: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 
 }
 
@@ -77,4 +80,12 @@ ul button {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+}
+
+.section {
+    background-color: seashell;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s
+
 }
