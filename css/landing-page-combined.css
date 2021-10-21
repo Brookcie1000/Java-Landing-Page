@@ -1,7 +1,7 @@
 /* Import header and footer css */
-@import "/css/header.css";
-@import "/css/footer.css";
-@import "/css/menu.css";
+@import "header.css";
+@import "footer.css";
+@import "menu.css";
 
 /* Set up web container for website */
 body {

@@ -25,7 +25,7 @@
     min-height: 30px;
     max-width: 10vw;
     max-height: 10vw;
-    background-image: url("/img/mobile/mobile-nav-bar.png");
+    background-image: url("../img/nav-bar.png");
     background-size: 100% 100%;
 
 }
@@ -58,7 +58,7 @@
         min-height: 40px;
         max-width: 10vw;
         max-height: 10vw;
-        background-image: url("/img/mobile/mobile-nav-bar.png");
+        background-image: url("../img/nav-bar.png");
         background-size: 100% 100%;
     
     }
