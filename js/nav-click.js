@@ -33,9 +33,9 @@ const scrollToSection = (num) => {
 
 /* Create list items of the sections */
 for(let i = 0; i < sectionList.length; i++) {
-    const listItemElement = document.createElement("button");
-    listItemElement.setAttribute("onclick",`scrollToSection(${(i+1)}); setActiveState(${(i+1)})`);
-    const listItemElementText = document.createElement("li");
+    const listItemElement = document.createElement("li");
+    const listItemElementText = document.createElement("button");
+    listItemElementText.setAttribute("onclick",`scrollToSection(${(i+1)}); setActiveState(${(i+1)})`);
     listItemElementText.innerText = sectionList[i].innerText;
     listItemElement.appendChild(listItemElementText);
     docFrag.appendChild(listItemElement);

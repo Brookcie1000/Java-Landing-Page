@@ -3,5 +3,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(153,217,234);
 
 }
