@@ -22,12 +22,6 @@ body {
  
 }
 
-/* Highlight divs for easy debug */
-.box {
-    /* border: 1px solid red; */
-
-}
-
 #content {
     grid-area: cont;
     display: grid;
