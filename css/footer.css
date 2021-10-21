@@ -6,3 +6,27 @@
     background-color: rgb(153,217,234);
 
 }
+
+#twitter-ft {
+height: 30px;
+width: 30px;
+background-image: url(http://icons.iconarchive.com/icons/iynque/ios7-style/1024/Twitter-icon.png);
+background-size: 100% 100%;
+
+}
+
+#facebook-ft {
+    height: 30px;
+    width: 30px;
+    background-image: url(https://www.pngitem.com/pimgs/m/522-5226534_free-facebook-app-icon-transparent-86426-facebook-app.png);
+    background-size: 100% 100%;
+
+}
+
+#linkedin-ft {
+    height: 30px;
+    width: 30px;
+    background-image: url(https://www.keesingtechnologies.com/wp-content/uploads/2018/07/Linkedin-Icon.png);
+    background-size: 100% 100%;
+
+}

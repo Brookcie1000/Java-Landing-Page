@@ -1,6 +1,7 @@
 /* Import header and footer css */
 @import "/css/header.css";
 @import "/css/footer.css";
+@import "/css/menu.css";
 
 /* Set up web container for website */
 body {
@@ -19,13 +20,6 @@ body {
     "cont"
     "foot";
  
-}
-
-#menu {
-    grid-area: menu;
-    background-color: rgb(153,217,234);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 /* Highlight divs for easy debug */
@@ -60,30 +54,16 @@ body {
 
 }
 
-.active {
-    background-color: purple;
-
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    padding-inline-start: 0px;
-    line-height: 2em;
-
-}
-
-ul button {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-}
-
 .section {
     background-color: seashell;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s
+
+}
+
+.active {
+    background-color: purple;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 black;
     transition: 0.3s
