@@ -5,6 +5,7 @@ This webpage works best when run on a server, but works perfectly fine run local
 
 --Usage--
 Open the index.html file using a browser. Using the navigation bar in the top right, click to show a menu of sections. Click the section you want to scroll to and it will highlight the button and section selected.
+When scrolling, it will automatically adjust the active section to one in the main view.
 
 More sections can be added to the html file as needed and the nav-bar will dynaically update itself for easy addition to the website.
 

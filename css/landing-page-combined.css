@@ -169,7 +169,7 @@ body {
     grid-area: cont;
     display: grid;
     height: 90%;
-    grid-row-gap: 1480px;
+    grid-row-gap: 900px;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;

@@ -35,7 +35,7 @@ const setActiveStateOnScroll = () => {
         document.getElementsByClassName("section active")[0].classList.remove("active");
         activeDiv.classList.add("active");
             
-    } else if (activeDivPreSibling !== null && activeDivPreSibling.getBoundingClientRect().bottom > 0) {
+    } else if (activeDivPreSibling !== null && activeDivPreSibling.getBoundingClientRect().bottom > 0 && activeDiv.getBoundingClientRect().top > window.screen.height) {
         activeDiv = activeDivPreSibling;
         if (document.querySelector(".active-menu") !== null){
             document.querySelector(".active-menu").classList.remove("active");
