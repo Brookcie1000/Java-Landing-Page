@@ -12,8 +12,8 @@ body {
 
 #container {
     display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 20vw auto auto 20vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vw auto 100% 20vw;
     grid-template-areas:
     "head"
     "menu"
@@ -26,7 +26,7 @@ body {
     grid-area: cont;
     display: grid;
     padding: 10px;
-    grid-row-gap: 10px;
+    grid-row-gap: 500px;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -65,6 +65,14 @@ body {
 
 }
 
+.active-menu {
+    background-color: purple;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s
+
+}
+
 @media (min-width: 768px) {
     /* Set up web container for website */
     body {
@@ -75,8 +83,8 @@ body {
 
     #container {
     display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vw auto 1000px 8vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vw auto 100% 8vw;
     grid-template-areas:
     "head"
     "menu"
@@ -88,7 +96,7 @@ body {
     #content {
     grid-area: cont;
     display: grid;
-    grid-row-gap: 10px;
+    grid-row-gap: 600px;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -125,6 +133,14 @@ body {
     box-shadow: 0 4px 8px 0 black;
     transition: 0.3s
 
+    }
+
+    .active-menu {
+        background-color: purple;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 black;
+        transition: 0.3s
+    
     }
 
 }
@@ -139,8 +155,8 @@ body {
 
     #container {
     display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vw auto auto 8vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vw auto 100% 8vw;
     grid-template-areas:
     "head"
     "menu"
@@ -152,8 +168,8 @@ body {
     #content {
     grid-area: cont;
     display: grid;
-    height: 100vh;
-    grid-row-gap: 10px;
+    height: 90%;
+    grid-row-gap: 1480px;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -190,6 +206,14 @@ body {
     box-shadow: 0 4px 8px 0 black;
     transition: 0.3s
 
+    }
+
+    .active-menu {
+        background-color: purple;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 black;
+        transition: 0.3s
+    
     }
 
 }
